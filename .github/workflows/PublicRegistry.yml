@@ -1,7 +1,8 @@
 name: Update public registry
 on:
   push:
-    tags: ['*']
+    branches:
+      - master
   workflow_dispatch:
 jobs:
   registry:
