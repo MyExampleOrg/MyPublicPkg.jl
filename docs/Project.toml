@@ -1,0 +1,3 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+MyPublicPkg = "a6e8d7c3-1fe2-45dc-81fa-a6c45a4fa21b"
