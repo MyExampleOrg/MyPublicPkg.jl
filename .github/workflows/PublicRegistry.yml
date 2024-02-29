@@ -1,0 +1,9 @@
+name: Update public registry
+on:
+  push:
+    tags: ['*']
+  workflow_dispatch:
+jobs:
+  registry:
+    uses: MyExampleOrg/MyPublicRegistry/.github/workflows/Registry.yml@master
+    secrets: inherit
