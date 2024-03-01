@@ -1,0 +1,16 @@
+name: Release
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    uses: MyExampleOrg/MyPublicPkg/.github/workflows/Coverage.yml@master
+
+  registration:
+    uses: MyExampleOrg/MyPublicRegistry/.github/workflows/Registry.yml@master
+    secrets: inherit
+
+  documentation:
+    uses: MyExampleOrg/MyPublicPkg/.github/workflows/Documentation.yml@master
