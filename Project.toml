@@ -1,7 +1,7 @@
 name = "MyPublicPkg"
 uuid = "a6e8d7c3-1fe2-45dc-81fa-a6c45a4fa21b"
 authors = [""]
-version = "1.0.8"
+version = "1.0.9"
 
 [compat]
 julia = "1"
