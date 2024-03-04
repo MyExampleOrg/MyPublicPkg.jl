@@ -11,4 +11,6 @@ jobs:
       - uses: MyExampleOrg/MyPublicRegistry/.github/actions/update-registry@master
         with:
           token: ${{ secrets.REGISTRATOR_TOKEN_2 }}
+          registry: ${{ vars.PUBLIC_REGISTRY_PATH }}
+          repository: ${{ github.repository }}
         
