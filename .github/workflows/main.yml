@@ -1,4 +1,4 @@
-name: Update public registry
+name: Update public registry 2
 on:
   # push:
   #   branches:
@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: MyExampleOrg/MyPublicRegistry/.github/actions/Update.yml@master
         with:
-          token: ${{ serets.REGISTRATOR_TOKEN_2 }}
+          token: ${{ secrets.REGISTRATOR_TOKEN_2 }}
         
