@@ -8,7 +8,7 @@ jobs:
   registry:
     runs-on: ubuntu-latest
     steps:
-      - uses: MyExampleOrg/MyPublicRegistry/.github/actions/update-registry/action.yml@master
+      - uses: MyExampleOrg/MyPublicRegistry/.github/actions/update-registry@master
         with:
           token: ${{ secrets.REGISTRATOR_TOKEN_2 }}
         
