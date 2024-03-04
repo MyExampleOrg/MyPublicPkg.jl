@@ -1,0 +1,14 @@
+name: Update public registry
+on:
+  # push:
+  #   branches:
+  #     - master
+  workflow_dispatch:
+jobs:
+  registry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: MyExampleOrg/MyPublicRegistry/.github/actions/Update.yml@master
+        with:
+          token: ${{ serets.REGISTRATOR_TOKEN_2 }}
+        
