@@ -10,4 +10,4 @@ concurrency:
   cancel-in-progress: ${{ startsWith(github.ref, 'refs/pull/') }}
 jobs:
   test:
-    uses: MyExampleOrg/.ci/.github/workflows/Coverage.yml@master
+    uses: MyExampleOrg/.CI/.github/workflows/Coverage.yml@master
