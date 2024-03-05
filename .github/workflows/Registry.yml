@@ -6,9 +6,8 @@ on:
   workflow_dispatch:
 jobs:
   registry:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: MyExampleOrg/.actions/update-registry@master
-        with:
-          token: ${{ secrets.REGISTRATOR_TOKEN_2 }}
-          registry: ${{ vars.PUBLIC_REGISTRY_PATH }}
+    uses: MyExampleOrg/.CI/.github/workflows/Registry.yml@master
+    with:
+      token: ${{ secrets.REGISTRATOR_TOKEN_2 }}
+      registers: MyExampleOrg/MyPublicRegistry
+      target_registry: MyExampleOrg/MyPublicRegistry
