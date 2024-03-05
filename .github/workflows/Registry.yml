@@ -1,4 +1,4 @@
-name: Update public registry 2
+name: Update public registry
 on:
   push:
     branches:
