@@ -8,6 +8,7 @@ jobs:
   registry:
     uses: MyExampleOrg/.CI/.github/workflows/Registry.yml@master
     with:
-      token: ${{ secrets.REGISTRATOR_TOKEN_2 }}
       registers: MyExampleOrg/MyPublicRegistry
       target_registry: MyExampleOrg/MyPublicRegistry
+    secrets:
+      token: ${{ secrets.REGISTRATOR_TOKEN_2 }}
