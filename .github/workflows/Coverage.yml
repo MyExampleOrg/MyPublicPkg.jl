@@ -11,5 +11,4 @@ concurrency:
 jobs:
   test:
     uses: MyExampleOrg/.CI/.github/workflows/Coverage.yml@master
-    with:
-      registers: "https://${{ secrets.REGISTRATOR_TOKEN_2 }}@github.com/MyExampleOrg/MyPrivateRegistry.git"
+    
